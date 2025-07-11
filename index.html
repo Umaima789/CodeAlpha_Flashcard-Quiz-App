@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Flashcard Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Advanced Flashcard Quiz App</h1>
+  <div class="flashcard" id="flashcard">Click "Show Answer" to begin</div>
+
+  <div class="controls">
+    <button onclick="prevCard()">Previous</button>
+    <button onclick="showAnswer()">Show Answer</button>
+    <button onclick="nextCard()">Next</button>
+    <button onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+  </div>
+
+  <div class="editor">
+    <input type="text" id="questionInput" placeholder="Enter question">
+    <input type="text" id="answerInput" placeholder="Enter answer">
+    <input type="text" id="imageInput" placeholder="Enter image URL (optional)">
+    <button onclick="addCard()">Add</button>
+    <button onclick="editCard()">Edit</button>
+    <button onclick="deleteCard()">Delete</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
